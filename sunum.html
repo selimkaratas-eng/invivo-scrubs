@@ -76,9 +76,9 @@
       <p class="alt-yazi">Canlının içinde. Kliniğin içinden.</p>
     </div>
     <div class="qr-kutu">
-      <div id="qr" role="img" aria-label="Kurucu listesi QR kodu"></div>
-      <p>Kurucu listesine katıl</p>
-      <small>Kameranı tut, 30 saniye sürer</small>
+      <div id="qr" role="img" aria-label="Ön sipariş QR kodu"></div>
+      <p>İlk seriden ön sipariş ver</p>
+      <small>Kameranı tut, ödeme yok, 1 dakika sürer</small>
     </div>
     <svg class="dalga-alt" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
       <path fill="#9BCBEB" fill-opacity=".35" d="M0 40 C 180 10 360 70 540 40 S 900 10 1080 40 S 1380 70 1500 40 V90 H0Z"/>
@@ -100,7 +100,7 @@
       var kaynak = params.get("kaynak") || "okul-sunumu";
       var hedef = new URL("./", location.href);
       hedef.searchParams.set("utm_source", kaynak);
-      hedef.hash = "liste";
+      hedef.hash = "siparis";
       new QRCode(document.getElementById("qr"), {
         text: hedef.toString(), width: 512, height: 512,
         colorDark: "#26343D", colorLight: "#FFFFFF", correctLevel: QRCode.CorrectLevel.M
