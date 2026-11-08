@@ -36,7 +36,7 @@
     <button class="menu-dugme" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç"><span></span></button>
     <nav class="menu" id="menu" aria-label="Ana menü">
       <a href="#detaylar">Neden InVivo</a>
-      <a href="#siparis">Koleksiyon</a>
+      <a href="#lookbook">Koleksiyon</a>
       <a href="#hikaye">Hikaye</a>
       <a href="#topluluk">Öğrenci ve okul</a>
       <a class="dugme kucuk" href="#siparis">Ön sipariş ver</a>
@@ -63,10 +63,10 @@
           <li>Üst ve alt ayrı</li>
         </ul>
       </div>
-      <div class="hero-gorsel" aria-hidden="true">
-        <div class="daire"></div>
-        <div class="kiyafet" id="hero-kiyafet"></div>
-        <div class="seri-etiketi"><b>No. 001</b><span>İlk seri</span></div>
+      <div class="hero-gorsel">
+        <div class="daire" aria-hidden="true"></div>
+        <figure class="hero-foto"><img src="assets/foto/ikili.jpg" alt="Vivo Mavi ve Derin Su takımlarıyla kadın ve erkek diş hekimi klinikte yürüyor" width="960" height="1287" fetchpriority="high"></figure>
+        <div class="seri-etiketi" aria-hidden="true"><b>No. 001</b><span>İlk seri</span></div>
       </div>
     </div>
     <svg class="dalga" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
@@ -91,7 +91,7 @@
   <section class="bolum" id="detaylar">
     <div class="kap">
       <div class="bolum-bas belir">
-        <p class="ust-etiket">Neden InVivo</p>
+        <p class="ust-etiket">Neden <span lang="en">InVivo</span></p>
         <h2>Kliniğin içinden gelen altı detay.</h2>
         <p>Formaların çoğu genel sağlık personeli için kesiliyor. Diş hekimliğinin kendi hareketleri, kendi kimyasalları ve kendi kuralları var. Biz oradan başladık.</p>
       </div>
@@ -134,6 +134,53 @@
           <h3>Gün boyu seninle hareket eder</h3>
           <p>Sık yıkamada rengini koruyan, kırışmayan, esneyen kumaş hedefi. Son seçimi numune provalarıyla yapıyoruz.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK -->
+  <section class="bolum beyaz" id="lookbook">
+    <div class="kap">
+      <div class="bolum-bas belir">
+        <p class="ust-etiket">İlk seri · Lookbook</p>
+        <h2>Kadın kalıbı. Erkek kalıbı. Aynı huzur.</h2>
+        <p>İki ayrı kalıp, aynı renk paleti. Bedenine göre kesilmiş forma, kliniğin içinde.</p>
+      </div>
+      <div class="lookbook">
+        <figure class="model belir">
+          <img src="assets/foto/kadin-vivo-mavi.jpg" alt="Vivo Mavi takım giymiş kadın diş hekimliği öğrencisi klinikte" width="960" height="1286" loading="lazy">
+          <figcaption>
+            <div><b>Kadın kalıbı</b><span>Vivo Mavi takım · jogger paça</span></div>
+            <button class="dugme kucuk" type="button" data-kombin="Kadın,vivo,vivo">Bu kombini seç</button>
+          </figcaption>
+        </figure>
+        <figure class="model belir">
+          <img src="assets/foto/erkek-derin-su.jpg" alt="Derin Su takım giymiş erkek diş hekimi klinikte" width="960" height="1287" loading="lazy">
+          <figcaption>
+            <div><b>Erkek kalıbı</b><span>Derin Su takım · düz paça</span></div>
+            <button class="dugme kucuk" type="button" data-kombin="Erkek,derin,derin">Bu kombini seç</button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- KLİNİKTE -->
+  <section class="bolum" id="klinikte">
+    <div class="kap klinik">
+      <figure class="klinik-foto belir">
+        <img src="assets/foto/kadin-klinikte.jpg" alt="Beyaz üst ve lacivert alt giymiş kadın diş hekimi koltuğun ışığını ayarlıyor" width="960" height="1287" loading="lazy">
+      </figure>
+      <div class="belir">
+        <p class="ust-etiket">Klinikte</p>
+        <h2 class="klinik-baslik">Öne eğil. Forma yerinde kalsın.</h2>
+        <p class="klinik-metin">Işığı ayarlarken, koltuğa uzanırken, saatlerce hastaya eğilirken. EğilBel kesimi arkada daha yüksek, üst ise belini kapatacak boyda.</p>
+        <ul class="avantaj">
+          <li>Beyaz üst ve Gece Laciverti alt, okul kuralına uygun.</li>
+          <li>Eldivenli elin bile ulaştığı cepler.</li>
+          <li>Paçada kısa, standart ve uzun boy.</li>
+        </ul>
+        <button class="dugme" type="button" data-kombin="Kadın,beyaz,lacivert" style="margin-top:28px">Beyaz + lacivert kombini seç</button>
       </div>
     </div>
   </section>
@@ -278,7 +325,7 @@
   <section class="bolum beyaz" id="topluluk">
     <div class="kap">
       <div class="bolum-bas belir">
-        <p class="ust-etiket">#InMyVivo</p>
+        <p class="ust-etiket" lang="en">#InMyVivo</p>
         <h2>Okulunla, ekibinle, sınıfınla.</h2>
         <p>Forma tek başına giyilmez. Aynı koridorda, aynı klinikte, aynı nöbette giyilir.</p>
       </div>
@@ -386,7 +433,6 @@
           <span class="ayrac" aria-hidden="true"></span>
           <span class="yazi"><span class="ad">InVivo</span><span class="alt">SCRUBS</span></span>
         </a>
-        <p class="slogan">Canlının içinde.</p>
       </div>
       <nav aria-label="Alt menü">
         <a href="#detaylar">Neden InVivo</a>

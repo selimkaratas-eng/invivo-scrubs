@@ -146,6 +146,17 @@
   }
   ciz();
 
+  // Lookbook ve klinik fotoğraflarındaki kombinler yapılandırıcıya taşınır
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-kombin]");
+    if (!t) return;
+    var k = t.dataset.kombin.split(",");
+    secim.urun = "takim"; secim.kalip = k[0]; secim.ust = k[1]; secim.alt = k[2];
+    ciz();
+    $("adim-bilgi").hidden = true; $("adim-secim").hidden = false;
+    $("siparis").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
   // Adımlar
   var adimSecim = $("adim-secim"), adimBilgi = $("adim-bilgi");
   $("devam").addEventListener("click", function () {
