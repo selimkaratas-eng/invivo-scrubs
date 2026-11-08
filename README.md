@@ -34,7 +34,7 @@ Global örneklerden alınanlar: kumaşa marka adı ve iki kelimelik fayda (FIGS 
 - [ ] **Form ucu.** `assets/site.js` içindeki `FORM_ENDPOINT` boş, ön siparişler şu an sadece ziyaretçinin tarayıcısında kalıyor. Google Apps Script web app (Sheet'e yazar) ya da Formspree adresi buraya yazılınca kayıtlar gerçekten toplanır.
 - [ ] **Logo.** Grafikerin temiz vektörü `assets/invivo-isaret.svg`, `-beyaz` ve `-koyu` sürümleriyle değiştirilir. `favicon.svg`, `assets/og.png` ve `assets/apple-touch-icon.png` yeniden üretilir.
 - [ ] **Alan adı.** Alınınca `og:image` adresi ve paylaşım metni yeni adrese çevrilir.
-- [ ] **Model fotoğrafları.** `assets/foto/` altındaki dört görsel Gemini ile üretildi (kadın Vivo Mavi, erkek Derin Su, klinikte beyaz üst + lacivert alt, ikili). Gerçek numune çekimi yapılınca aynı adlarla değiştirilir. Yapay zeka görseli olduğu için reklamda kullanılacaksa platform etiket kuralları kontrol edilir.
+- [ ] **Model fotoğrafları.** `assets/foto/` altındaki dört görsel Gemini ile üretildi (kadın Vivo Mavi, erkek Derin Su, klinikte beyaz üst + lacivert alt, ikili). Göğüs ve koldaki InVivo işareti sonradan nakış efektiyle işlendi, orijinaller yerelde scratchpad yedeğinde. Gerçek numune çekimi yapılınca aynı adlarla değiştirilir. Yapay zeka görseli olduğu için reklamda kullanılacaksa platform etiket kuralları kontrol edilir.
 - [ ] **Melisa'nın fotoğrafı.** Hikaye bölümündeki mavi alan fotoğrafla değiştirilir.
 - [ ] **Yasal metinler.** KVKK, çerez ve mesafeli satış metinleri taslak. Şirket unvanı ve adresi girilip hukukçuya kontrol ettirilir.
 - [ ] **Ölçüm.** Meta Pixel ve GA4 eklenecekse çerez onayı ile birlikte eklenir.
